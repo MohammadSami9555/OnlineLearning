@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Courses - LearnMate</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Welcome, <span id="studentName"></span> 👋</h2>
+
+    <h3>📹 Video Lessons</h3>
+    <div class="videos">
+      <iframe width="300" height="200" src="https://www.youtube.com/embed/UB1O30fR-EE" allowfullscreen></iframe>
+      <iframe width="300" height="200" src="https://www.youtube.com/embed/3PHXvlpOkf4" allowfullscreen></iframe>
+    </div>
+
+    <h3>📝 Quick Quiz</h3>
+    <div id="quiz">
+      <p>What does HTML stand for?</p>
+      <button onclick="checkAnswer(this)">Hyper Text Markup Language ✅</button>
+      <button onclick="checkAnswer(this)">High Text Machine Language</button>
+      <button onclick="checkAnswer(this)">Home Tool Markup Language</button>
+    </div>
+
+    <p id="result"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
